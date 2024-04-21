@@ -1,0 +1,16 @@
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.zip
+sudo unzip ngrok-v3-stable-linux-arm64.zip
+sudo mv ngrok /usr/local/bin
+cd /usr/local/bin
+./ngrok authtoken 2SJWvY0jYDegy4wisDnK94hz7UC_i9TxthKFMS2axdbQsQFa
+./ngrok start --all
+cnltrl+l
+---------------------------------
+./ngrok authtoken 2SJWvY0jYDegy4wisDnK94hz7UC_i9TxthKFMS2axdbQsQFa
+./ngrok start --all
+-----------------------------------
+C:\Users\hassan\Documents\MEGA\SSH\ngrok
+------------------------------------
+/home/pi/ngrok-service      (ngrok.sample.yml)
+/home/pi/.config/ngrok      (ngrok.yml)
+-------------

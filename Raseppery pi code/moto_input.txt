@@ -1,0 +1,31 @@
+#!/ usr / bin/ python3
+# Partie 1 du code
+from time import sleep
+import time
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BOARD)
+#fonction permettant de commuter toutes les broches utilisées sur lr niveau bas
+def all_off():
+    GPIO.output(EnableA,False)
+    GPIO.output(EnableB,False)
+    GPIO.output(Input1,False)
+    GPIO.output(Input2,False)
+    GPIO.output(Input3,False)
+    GPIO.output(Input4,False)
+    return
+#Les noms des entrées L298 sont attribués aux broches GPIO.
+EnableA = 13
+EnableB = 15
+Input1 = 3
+Input2 = 5
+Input3 = 7
+Input4 = 11
+#Déclarer toutes les broches GPIO utilisées comme sortie
+GPIO.setup(EnableA,GPIO.OUT)
+GPIO.setup(EnableB,GPIO.OUT)
+GPIO.setup(Input1,GPIO.OUT)
+GPIO.setup(Input2,GPIO.OUT)
+GPIO.setup(Input3,GPIO.OUT)
+GPIO.setup(Input4,GPIO.OUT)
+#appeler la fonction all_off
+all_off()
